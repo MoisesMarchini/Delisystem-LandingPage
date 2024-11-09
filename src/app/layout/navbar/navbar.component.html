@@ -1,0 +1,64 @@
+<header
+  #header
+  class="bg-transparent sticky top-0 min-h-20 overflow-hidden z-50"
+  [class.scrolled]="windowScrollY > 0 || !navCollapse"
+  [style]="{ 'margin-bottom': '-80px', '--_items-amount': navlinks.length }"
+>
+  <div class="container flex items-center justify-between">
+    <img src="/logo.png" class="h-20 w-auto" [alt]="contact.name" srcset="" />
+    <button
+      class="font-oswald text-xl uppercase lg:hidden aspect-square w-12 grid place-items-center"
+      (click)="navCollapse = !navCollapse"
+    >
+      <i
+        class="fa-solid fa-bars absolute opacity-0 transition-all"
+        [class.opacity-100]="navCollapse"
+        [class.-rotate-90]="!navCollapse"
+        [class.rotate-0]="navCollapse"
+      ></i>
+      <i
+        class="fa-solid fa-xmark absolute opacity-0 transition-all"
+        [class.opacity-100]="!navCollapse"
+        [class.rotate-90]="navCollapse"
+        [class.rotate-0]="!navCollapse"
+      ></i>
+    </button>
+    <nav class="lg:block hidden">
+      <ul class="flex gap-5">
+        <li
+          *ngFor="let item of navlinks"
+          style="letter-spacing: 3px"
+          class="uppercase font-semibold text-xs"
+        >
+          <a
+            [href]="'#' + item.id"
+            [class.active]="item.id === currentSection"
+            class="hover:border-b hover:opacity-100 opacity-50 p-2 navlink"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <nav
+    class="lg:hidden block container overflow-hidden transition-all mobile"
+    [class.collapse]="navCollapse"
+  >
+    <ul class="flex flex-col gap-5 py-4">
+      <li
+        *ngFor="let item of navlinks"
+        style="letter-spacing: 3px"
+        class="uppercase font-semibold text-xs"
+      >
+        <a
+          [href]="'#' + item.id"
+          [class.active]="item.id === currentSection"
+          class="hover:border-b hover:opacity-100 opacity-50 p-2 navlink"
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

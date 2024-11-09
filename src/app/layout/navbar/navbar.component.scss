@@ -1,0 +1,22 @@
+.navlink {
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &.active {
+    @apply border-b;
+    @apply opacity-100;
+  }
+}
+nav.mobile {
+  height: calc((1rem + 1.25rem) * var(--_items-amount) + 1.5rem);
+  &.collapse {
+    height: 0;
+  }
+}
+header {
+  transition: 0.4s;
+  &.scrolled {
+    @apply bg-white;
+    @apply bg-opacity-90;
+    @apply backdrop-blur-sm;
+    @apply shadow-2;
+  }
+}

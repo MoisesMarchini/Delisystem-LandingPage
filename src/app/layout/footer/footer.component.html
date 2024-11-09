@@ -1,0 +1,39 @@
+<footer
+  class="pb-8 bg-zinc-200 text-zinc-500 stickys bottom-0 z-0 font-medium text-xs lg:text-sm"
+>
+  <div class="container">
+    <div
+      class="row flex flex-col mb-8 lg:mb-0 lg:flex-row lg:justify-between items-center"
+    >
+      <div class="col flex lg:justify-start justify-center">
+        <h1>
+          <span
+            class="bg-zinc-700 w-28 aspect-square block"
+            style="
+              mask-image: url('/logo.png');
+              mask-size: cover;
+              mask-repeat: no-repeat;
+              -webkit-mask-image: url('/logo.png');
+              -webkit-mask-size: cover;
+              -webkit-mask-repeat: no-repeat;
+            "
+          ></span>
+        </h1>
+      </div>
+      <div class="col flex lg:justify-start justify-center">
+        <ul class="social-links flex gap-3">
+          <li *ngFor="let item of socialLinks">
+            <app-social-button
+              [link]="item.path"
+              class="bg-zinc-500 hover:bg-highlight transition rounded-full text-zinc-200"
+            >
+              <i [class]="'fa-brands fa-' + (item.icon ?? item.label)"></i>
+            </app-social-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="mb-8 border-zinc-500" />
+    <div class="text-center">&copy; Todos os direitos reservados</div>
+  </div>
+</footer>
