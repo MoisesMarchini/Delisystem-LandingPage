@@ -22,6 +22,8 @@ export class SectionManagerService {
     this.sections = [];
     for (let index = 0; index < this.navLinks.length; index++) {
       const navlink = this.navLinks[index];
+      if (!navlink.id) continue;
+
       const htmlElement = document.getElementById(navlink.id);
 
       if (htmlElement)

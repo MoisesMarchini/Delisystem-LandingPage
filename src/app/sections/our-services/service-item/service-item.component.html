@@ -1,0 +1,8 @@
+<div class="flex flex-col lg:grid grid-cols-2 lg:gap-40 gap-10 min-h-[80vh]">
+  <app-image-tilt class="m-auto" [rtl]="serviceItem.rtl">
+    <img src="sections/hero/desktop.png" alt="" srcset="" />
+  </app-image-tilt>
+  <div class="m-auto" [class.lg:-order-1]="!serviceItem.rtl">
+    <app-section-header [contentItem]="serviceItem"></app-section-header>
+  </div>
+</div>

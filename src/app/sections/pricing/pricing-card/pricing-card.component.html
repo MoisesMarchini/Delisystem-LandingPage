@@ -1,0 +1,33 @@
+<div
+  animate="false"
+  class="card shadow-highlight shadow-behind neon-xs flex flex-col bg-opacity-5 rounded-md h-full transition-all"
+>
+  <div class="card-header p-6 bg-highlight text-white rounded-t-md">
+    <h5 class="mb-6 text-5xl mt-auto font-semibold">
+      {{ pricingItem.price }}<span class="text-xs">/ mês</span>
+    </h5>
+    <h4 class="text-sm font-medium m-0">
+      {{ pricingItem.name }}
+    </h4>
+  </div>
+  <div
+    class="card-body p-6 flex flex-col flex-grow bg-white shadow-xl bg-opacity-85 text-black rounded-b-md"
+  >
+    <ul class="mb-16 text-sm flex flex-col gap-4">
+      <li
+        *ngFor="let item of pricingItem.items"
+        class="flex gap-3 items-start font-medium"
+      >
+        <i
+          class="fa-solid fa-circle-check text-highlight h-4 w-4 text-base mt-1 grid place-content-center"
+        ></i>
+        {{ item }}
+      </li>
+    </ul>
+    <app-secondary-button class="mt-auto w-full"
+      ><span class="text-xs mx-auto">
+        Começar agora!
+      </span></app-secondary-button
+    >
+  </div>
+</div>

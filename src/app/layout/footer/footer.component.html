@@ -1,5 +1,5 @@
 <footer
-  class="pb-8 bg-zinc-200 text-zinc-500 stickys bottom-0 z-0 font-medium text-xs lg:text-sm"
+  class="pb-8 bg-gradient-to-b from-orange-100 to-orange-200 text-zinc-800 stickys bottom-0 z-0 font-medium text-xs lg:text-sm"
 >
   <div class="container">
     <div
@@ -25,7 +25,7 @@
           <li *ngFor="let item of socialLinks">
             <app-social-button
               [link]="item.path"
-              class="bg-zinc-500 hover:bg-highlight transition rounded-full text-zinc-200"
+              class="bg-zinc-800 hover:bg-highlight hover:text-white transition rounded-full text-zinc-200"
             >
               <i [class]="'fa-brands fa-' + (item.icon ?? item.label)"></i>
             </app-social-button>
@@ -33,7 +33,7 @@
         </ul>
       </div>
     </div>
-    <hr class="mb-8 border-zinc-500" />
+    <hr class="mb-8 border-zinc-600" />
     <div class="text-center">&copy; Todos os direitos reservados</div>
   </div>
 </footer>

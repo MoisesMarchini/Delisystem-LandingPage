@@ -1,0 +1,13 @@
+.img-wrapper {
+  // -webkit-mask-image: url("/blobs/1.svg");
+  // mask-image: url("/blobs/1.svg");
+  // -webkit-mask-size: cover;
+  // mask-size: cover;
+}
+
+.bg-shape {
+  -webkit-mask-image: url("/blobs/2.svg");
+  mask-image: url("/blobs/2.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}

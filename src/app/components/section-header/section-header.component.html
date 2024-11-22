@@ -1,9 +1,9 @@
-<h2 class="text-2xl lg:text-5xl font-semibold mb-8 text-balance">
+<h2 class="text-2xl lg:text-5xl font-medium mb-6 lg:mb-8 text-balance">
   {{ contentItem.title }}
 </h2>
 <ng-content select=".after-title"></ng-content>
 <p
-  class="lg:text-xl"
+  class="lg:text-lg text-balance"
   *ngIf="!!contentItem.description"
   [innerHTML]="contentItem.description"
 ></p>

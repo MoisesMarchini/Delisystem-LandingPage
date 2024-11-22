@@ -1,0 +1,14 @@
+<app-base-section class="bg-orange-100">
+  <div class="py-16 lg:py-32">
+    <div class="layout">
+      <app-section-header [contentItem]="sectionProps"></app-section-header>
+      <div class="grid lg:grid-cols-3 gap-4 mt-14">
+        <app-pricing-card
+          class="relative hover:z-10"
+          *ngFor="let pricingItem of sectionProps.items"
+          [pricingItem]="pricingItem"
+        ></app-pricing-card>
+      </div>
+    </div>
+  </div>
+</app-base-section>

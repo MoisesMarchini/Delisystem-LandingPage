@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostBinding } from '@angular/core';
 import { SectionManagerService } from '../../services/section-manager.service';
 import { WindowService } from '../../services/window.service';
+import { SectionIdentifier } from '../../models/section-props';
 
 @Component({
   selector: 'app-base-section',
@@ -13,7 +14,7 @@ import { WindowService } from '../../services/window.service';
   }
 })
 export class BaseSectionComponent {
-  protected sectionProps: any;
+  protected sectionProps!: SectionIdentifier;
   protected sectionId?: string;
   hasPastSection = false;
 
@@ -25,7 +26,7 @@ export class BaseSectionComponent {
   }
 
   private init() {
-    this.sectionId = this.sectionProps?.id?? this.elementRef.nativeElement.id;
+    this.sectionId = this.sectionProps?.id ?? this.elementRef.nativeElement.id;
 
     if (!this.sectionId) return;
 

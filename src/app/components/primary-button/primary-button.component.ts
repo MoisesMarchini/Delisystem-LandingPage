@@ -11,6 +11,7 @@ import { PricingItem, PricingName } from '../../models/pricing';
 export class PrimaryButtonComponent {
   @Input() pricingName?: PricingName;
   @Input() pricingItem?: PricingItem;
+  @Input() whatsappMessage?: string;
   @Output() onClickEv = new EventEmitter<any>();
 
   constructor(private whatsappService: WhatsappService) {
@@ -30,6 +31,7 @@ export class PrimaryButtonComponent {
       return;
     }
 
-    this.whatsappService.sendMessage();
+    if(this.whatsappMessage)
+      this.whatsappService.sendMessage(this.whatsappMessage);
   }
 }

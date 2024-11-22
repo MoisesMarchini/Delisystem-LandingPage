@@ -1,0 +1,48 @@
+<div
+  class="hero-wrapper overflow-hidden bg-gradient-to-br from-orange-50 via-orange-100 to-orange-100 relative pb-32"
+>
+  <div class="hero-content relative h-dvh overflow-hidden z-0 pt-20 pb-10">
+    <div
+      class="container h-full grid z-10 grid-rows-5 lg:grid-rows-1 lg:grid-cols-5 pt-10 lg:pt-0 lg:gap-10"
+    >
+      <div
+        class="row-span-3 lg:row-span-1 lg:col-span-3 content flex flex-col items-start lg:justify-center min-h-[40%] mb-6 lg:my-auto justify-end"
+      >
+        <h1 class="text-4xl lg:text-7xl font-semibold mb-3 text-balance">
+          {{ sectionProps.title }}
+        </h1>
+        <p class="mb-12 text-xs lg:text-base text-balance">
+          {{ sectionProps.description }}
+        </p>
+        <app-primary-button>
+          <span class="text-sm lg:text-base font-semibold">
+            {{ sectionProps.ctaText }}
+          </span>
+        </app-primary-button>
+      </div>
+      <div
+        class="row-span-2 lg:row-span-1 lg:col-span-2 hero-img-wrapper grid relative -order-1 lg:order-1 -z-10"
+      >
+        <div class="img-wrapper relative m-auto scale-75 lg:scale-100">
+          <app-image-tilt>
+            <img
+              class="object-scale-down w-full h-full"
+              src="/sections/hero/desktop.png"
+              alt=""
+              srcset=""
+          /></app-image-tilt>
+          <app-image-tilt class="absolute top-1/2 right-[10%]">
+            <img
+              class="object-scale-down w-full h-full max-h-[180px]"
+              src="/sections/hero/mobile.png"
+              alt=""
+              srcset=""
+          /></app-image-tilt>
+          <div
+            class="absolute -z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[100%] rounded-full aspect-square bg-highlight"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

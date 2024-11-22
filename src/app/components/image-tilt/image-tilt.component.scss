@@ -1,0 +1,9 @@
+.tilt-container {
+  --_shadow-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 20px 60px var(--_shadow-color);
+  transform: scale(1.05) perspective(2910px) rotateY(-12deg) rotateX(-3deg) rotate(2deg);
+  &.rtl {
+    box-shadow: -20px 20px 60px var(--_shadow-color);
+    transform: scale(1.05) perspective(2910px) rotateY(12deg) rotateX(3deg) rotate(-2deg);
+  }
+}

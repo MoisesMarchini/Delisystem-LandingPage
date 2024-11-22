@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        highlight: "#dc3545",
+        highlight: "#FF3131",
         primary: "",
         secondary: "",
       },
       container: {
         center: true,
         padding: "1rem",
-        screens: ["640px", "768px", "1024px", "1280px"],
+        screens: ["640px", "768px", "1024px", "1200px"],
       },
     },
   },

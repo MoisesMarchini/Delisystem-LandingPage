@@ -15,8 +15,7 @@ header {
   transition: 0.4s;
   &.scrolled {
     @apply bg-white;
-    @apply bg-opacity-90;
-    @apply backdrop-blur-sm;
+    @apply bg-opacity-100;
     @apply shadow-2;
   }
 }
