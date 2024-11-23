@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ImageTiltComponent } from "../../../components/image-tilt/image-tilt.component";
 import { SectionHeaderComponent } from "../../../components/section-header/section-header.component";
-import { ServiceItem } from '../../../models/section-props';
+import { ServiceItem } from '../../../models/service-item';
 
 @Component({
   selector: 'app-service-item',
@@ -11,5 +11,5 @@ import { ServiceItem } from '../../../models/section-props';
   styleUrl: './service-item.component.scss'
 })
 export class ServiceItemComponent {
-  @Input() serviceItem = new ServiceItem();
+  @Input() model = new ServiceItem();
 }

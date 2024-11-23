@@ -1,4 +1,6 @@
-import { HeroSection, PricingSection, ServiceItem, ServicesSection } from "../app/models/section-props";
+import { AfterHeroCard } from "../app/models/after-hero-card";
+import { AfterHeroSection, HeroSection, PricingSection, ServicesSection } from "../app/models/section-props";
+import { ServiceItem } from "../app/models/service-item";
 
 export const environment = {
   appColors: {
@@ -49,12 +51,43 @@ export const environment = {
       description: 'Conheça a nossa plataforma de Delivery, onde 100% do valor do pedido é do estabelecimento.',
       ctaText: 'Entre em contato'
     } as HeroSection,
+    afterHero: {
+      items: [
+        new AfterHeroCard({
+          fontawesomeIcon: 'fas fa-pizza-slice',
+          title: 'Cardápio Completo',
+          description: 'Tenha um cardápio completo e intuitivo. Fácil para seus clientes e prático para você.'
+        }),
+        new AfterHeroCard({
+          fontawesomeIcon: 'fas fa-edit',
+          title: 'Fácil para editar',
+          description: 'Um sistema intuitivo, aonde você consegue configurar sua loja, cardápio, funcionários, itens, cupons e etc.'
+        }),
+        new AfterHeroCard({
+          fontawesomeIcon: 'fas fa-link',
+          title: 'Link Amigável',
+          description: 'Tenha um link prático e amigável para enviar a seus clientes sem precisar baixar aplicativos.'
+        }),
+      ]
+    } as AfterHeroSection,
     services: {
       id: 'services',
       items: [
-        new ServiceItem(),
-        new ServiceItem({rtl: true}),
-        new ServiceItem(),
+        new ServiceItem({
+          rtl: false,
+          title: 'afcu',
+          description: '',
+        }),
+        new ServiceItem({
+          rtl: true,
+          title: '',
+          description: '',
+        }),
+        new ServiceItem({
+          rtl: false,
+          title: '',
+          description: '',
+        }),
       ]
     } as ServicesSection,
     pricing: {
@@ -65,22 +98,21 @@ export const environment = {
         {
           name: "basic",
           items: [
-            "Ideal para corredores com rotina de treino",
-            "Focado em melhorar desempenho em provas de rua",
-            "Alvo para quem busca metas de tempo e resistência",
-            "Distâncias específicas para variados níveis",
+            "Somente um usuário",
+            "Cardápio Digital",
+            "Gerenciamento de pedidos em tempo real",
           ],
-          price: "R$ 79,99"
+          price: "GRÁTIS"
         },
         {
           name: "regular",
           items: [
-            "Ideal para quem está começando no mundo da corrida",
-            "Focado em emagrecimento e saúde",
+            "Funções do plano basic",
+            "Cadastro de até 5 funcionários",
             "Adaptado para iniciantes com orientação e motivação",
             "Ajuda na construção de um hábito saudável",
           ],
-          price: "R$ 79,99"
+          price: "R$ 74,99"
         },
         {
           name: "pro",

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContentItem } from '../../models/section-props';
+import { ContentItem } from '../../models/content-item';
 
 @Component({
   selector: 'app-section-header',

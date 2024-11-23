@@ -22,7 +22,7 @@ export class AppComponent {
   constructor(private windowService: WindowService, private sectionManagerService: SectionManagerService) { }
 
   ngAfterViewInit() {
-    this.sectionManagerService.init()
+    this.sectionManagerService.init();
   }
 
   @HostListener('window:scroll')

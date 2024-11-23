@@ -6,7 +6,7 @@
 >
   <div class="container flex items-center justify-between">
     <app-logo class="h-20 max-w-32"></app-logo>
-    <nav class="lg:block hidden mx-auto">
+    <nav class="lg:block hidden ms-auto">
       <ul class="flex gap-5">
         <li
           *ngFor="let item of navlinks"
@@ -22,7 +22,7 @@
         </li>
       </ul>
     </nav>
-    <app-login-button class="ms-auto lg:ms-0"></app-login-button>
+    <app-login-button class="ms-8"></app-login-button>
     <button
       class="font-oswald text-xl uppercase lg:hidden aspect-square w-12 grid place-items-center ms-8"
       (click)="navCollapse = !navCollapse"
