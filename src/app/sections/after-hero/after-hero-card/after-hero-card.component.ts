@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AfterHeroCard } from '../../../models/after-hero-card';
+import { AfterHeroCard } from '../../../models/items/after-hero-card';
 import { CommonModule } from '@angular/common';
 
 @Component({

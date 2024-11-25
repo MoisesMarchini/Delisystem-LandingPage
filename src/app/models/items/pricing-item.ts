@@ -1,4 +1,4 @@
-import { BaseModel } from "./base-model";
+import { BaseModel } from "../base/base-model";
 
 export enum PricingName {
   basic = 'Básico',

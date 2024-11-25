@@ -1,4 +1,4 @@
-import { Merge, RemoveEmptyOrNullFields, RemoveNullFields } from "../helpers/util";
+import { Merge, RemoveEmptyOrNullFields, RemoveNullFields } from "../../helpers/util";
 
 export abstract class BaseModel<T extends object> {
   constructor(params: Partial<T> = {}, keepEmptyFields = false) {

@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostBinding } from '@angular/core';
 import { SectionManagerService } from '../../services/section-manager.service';
 import { WindowService } from '../../services/window.service';
-import { SectionIdentifier } from '../../models/section-props';
+import { SectionIdentifier } from '../../models/base/section-identifier';
 
 @Component({
   selector: 'app-base-section',

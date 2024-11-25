@@ -1,7 +1,10 @@
-import { AfterHeroCard } from "../app/models/after-hero-card";
-import { PricingItem, PricingName } from "../app/models/pricing-item";
-import { AfterHeroSection, HeroSection, PricingSection, ServicesSection } from "../app/models/section-props";
-import { ServiceItem } from "../app/models/service-item";
+import { AfterHeroCard } from "../app/models/items/after-hero-card";
+import { PricingItem, PricingName } from "../app/models/items/pricing-item";
+import { ServiceItem } from "../app/models/items/service-item";
+import { AfterHeroSection } from "../app/models/sections/after-hero-section";
+import { HeroSection } from "../app/models/sections/hero-section";
+import { PricingSection } from "../app/models/sections/pricing-section";
+import { ServicesSection } from "../app/models/sections/services-section";
 
 export const environment = {
   appColors: {

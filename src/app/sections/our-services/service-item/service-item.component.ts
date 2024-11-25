@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ImageTiltComponent } from "../../../components/image-tilt/image-tilt.component";
 import { SectionHeaderComponent } from "../../../components/section-header/section-header.component";
-import { ServiceItem } from '../../../models/service-item';
+import { ServiceItem } from '../../../models/items/service-item';
 
 @Component({
   selector: 'app-service-item',

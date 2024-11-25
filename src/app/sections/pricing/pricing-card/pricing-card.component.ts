@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PrimaryButtonComponent } from "../../../components/primary-button/primary-button.component";
 import { SecondaryButtonComponent } from "../../../components/secondary-button/secondary-button.component";
 import { CommonModule } from '@angular/common';
-import { PricingItem } from '../../../models/pricing-item';
+import { PricingItem } from '../../../models/items/pricing-item';
 
 @Component({
   selector: 'app-pricing-card',

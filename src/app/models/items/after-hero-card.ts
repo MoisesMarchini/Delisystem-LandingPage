@@ -1,4 +1,4 @@
-import { BaseModel } from "./base-model";
+import { BaseModel } from "../base/base-model";
 import { ContentItem } from "./content-item";
 
 export interface AfterHeroCard extends ContentItem {
