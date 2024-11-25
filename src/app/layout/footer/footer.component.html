@@ -23,12 +23,12 @@
       <div class="col flex lg:justify-start justify-center">
         <ul class="social-links flex gap-3">
           <li *ngFor="let item of socialLinks">
-            <app-social-button
-              [link]="item.path"
-              class="bg-zinc-800 hover:bg-highlight hover:text-white transition rounded-full text-zinc-200"
+            <a
+              [href]="item.path"
+              class="social-btn bg-zinc-800 hover:bg-highlight hover:text-white transition rounded-full text-zinc-200"
             >
               <i [class]="'fa-brands fa-' + (item.icon ?? item.label)"></i>
-            </app-social-button>
+            </a>
           </li>
         </ul>
       </div>

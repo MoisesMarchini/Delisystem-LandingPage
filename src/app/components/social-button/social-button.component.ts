@@ -1,16 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { BaseButtonComponent } from '../base-button/base-button.component';
 
 @Component({
-  selector: 'app-social-button',
+  selector: '.social-btn',
   standalone: true,
   imports: [],
-  templateUrl: './social-button.component.html',
+  template: '<ng-content></ng-content>',
   styleUrl: './social-button.component.scss',
-  host: {
-    class: 'block'
-  }
 })
-export class SocialButtonComponent {
-  @Input() link = ''
-  @Input() label = ''
+export class SocialButtonComponent extends BaseButtonComponent{
+  override defaultClasses: string = "grid place-content-center w-8 h-8";
 }
