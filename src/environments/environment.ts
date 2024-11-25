@@ -78,16 +78,19 @@ export const environment = {
       id: 'services',
       items: [
         new ServiceItem({
+          imgPath: '/sections/services/pedidos em tempo real.png',
           rtl: false,
           title: "Controle pedidos em tempo real",
           description: "Visualize e administre todos os pedidos em tempo real. Monitore cada etapa, desde o recebimento até a entrega, com total eficiência."
         }),
         new ServiceItem({
+          imgPath: '/sections/services/dashboard.png',
           rtl: true,
           title: "Relatórios detalhados e precisos",
           description: "Acompanhe o desempenho do seu delivery com relatórios semanais, mensais e de períodos específicos. Tome decisões estratégicas com base em dados reais."
         }),
         new ServiceItem({
+          imgPath: '/sections/hero/desktop.png',
           rtl: false,
           title: "Atendimento automatizado no WhatsApp",
           description: "Automatize o atendimento ao cliente com um robô de WhatsApp. Responda dúvidas, receba pedidos e otimize sua comunicação."
