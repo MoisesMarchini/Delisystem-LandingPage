@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { WhatsappService } from '../../services/whatsapp.service';
-import { PricingItem, PricingName } from '../../models/pricing';
+import { PricingItem, PricingName } from '../../models/pricing-item';
 @Component({
   selector: 'app-primary-button',
   standalone: true,

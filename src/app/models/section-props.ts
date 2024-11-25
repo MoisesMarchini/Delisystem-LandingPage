@@ -1,6 +1,6 @@
 import { AfterHeroCard } from "./after-hero-card";
 import { ContentItem } from "./content-item";
-import { PricingItem } from "./pricing";
+import { PricingItem } from "./pricing-item";
 import { ServiceItem } from "./service-item";
 
 export interface SectionIdentifier {

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PricingName } from '../models/pricing';
+import { PricingName } from '../models/pricing-item';
 
 @Injectable({
   providedIn: 'root'
@@ -13,14 +13,6 @@ export class WhatsappService {
 
   sendMessageFromService(pricing: PricingName) {
     const message = `Olá! Gostaria de saber mais sobre o plano ${pricing} do Delisystem`
-
-    switch (pricing) {
-      case 'basic':
-      case 'regular':
-      case 'pro':
-      default:
-        break;
-    };
 
     this.sendMessage(message);
   }

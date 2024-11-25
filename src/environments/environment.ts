@@ -1,4 +1,5 @@
 import { AfterHeroCard } from "../app/models/after-hero-card";
+import { PricingItem, PricingName } from "../app/models/pricing-item";
 import { AfterHeroSection, HeroSection, PricingSection, ServicesSection } from "../app/models/section-props";
 import { ServiceItem } from "../app/models/service-item";
 
@@ -47,8 +48,8 @@ export const environment = {
   sectionProps: {
     hero: {
       id: 'hero',
-      title: 'Pedidos rápidos pelo whatsapp',
-      description: 'Conheça a nossa plataforma de Delivery, onde 100% do valor do pedido é do estabelecimento.',
+      title: 'Transforme seu Delivery',
+      description: "A solução completa para gerenciar seu delivery de comida com eficiência e praticidade. Gerencie pedidos, entregas, relatórios e cupons de forma simples e eficiente.",
       ctaText: 'Entre em contato'
     } as HeroSection,
     afterHero: {
@@ -75,18 +76,18 @@ export const environment = {
       items: [
         new ServiceItem({
           rtl: false,
-          title: 'afcu',
-          description: '',
+          title: "Controle pedidos em tempo real",
+          description: "Visualize e administre todos os pedidos em tempo real. Monitore cada etapa, desde o recebimento até a entrega, com total eficiência."
         }),
         new ServiceItem({
           rtl: true,
-          title: '',
-          description: '',
+          title: "Relatórios detalhados e precisos",
+          description: "Acompanhe o desempenho do seu delivery com relatórios semanais, mensais e de períodos específicos. Tome decisões estratégicas com base em dados reais."
         }),
         new ServiceItem({
           rtl: false,
-          title: '',
-          description: '',
+          title: "Atendimento automatizado no WhatsApp",
+          description: "Automatize o atendimento ao cliente com um robô de WhatsApp. Responda dúvidas, receba pedidos e otimize sua comunicação."
         }),
       ]
     } as ServicesSection,
@@ -95,35 +96,36 @@ export const environment = {
       title: 'Escolha o Plano Ideal para Você',
       description: 'Oferecemos planos personalizados para todos os níveis e objetivos de corrida, seja para corredores iniciantes, entusiastas de provas de rua, ou candidatos a testes de aptidão física. Alcance suas metas com um acompanhamento profissional adaptado às suas necessidades.',
       items: [
-        {
-          name: "basic",
+        new PricingItem({
+          name: PricingName.basic,
           items: [
             "Somente um usuário",
             "Cardápio Digital",
             "Gerenciamento de pedidos em tempo real",
           ],
-          price: "GRÁTIS"
-        },
-        {
-          name: "regular",
+          price: "R$ 0,00"
+        }),
+        new PricingItem({
+          name: PricingName.regular,
           items: [
-            "Funções do plano basic",
+            "Funções do plano básico",
             "Cadastro de até 5 funcionários",
-            "Adaptado para iniciantes com orientação e motivação",
-            "Ajuda na construção de um hábito saudável",
+            "Robô para whatsapp",
+            "Sistema de comandas para mesas/garçons",
           ],
-          price: "R$ 74,99"
-        },
-        {
-          name: "pro",
+          price: "R$ 55,00"
+        }),
+        new PricingItem({
+          name: PricingName.pro,
           items: [
-            "Desenvolvido para candidatos a testes de aptidão física militar",
+            "Funções do plano normal",
+            "Sem limite de funcionários",
             "Treinos focados em performance para o TAF",
             "Preparação para exigências físicas específicas do teste",
             "Aborda técnicas de resistência e velocidade",
           ],
-          price: "R$ 49,99"
-        },
+          price: "R$ 85,00"
+        }),
       ]
     } as PricingSection,
   }
