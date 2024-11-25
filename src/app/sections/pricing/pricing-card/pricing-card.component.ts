@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { PrimaryButtonComponent } from "../../../components/primary-button/primary-button.component";
-import { SecondaryButtonComponent } from "../../../components/secondary-button/secondary-button.component";
+import { PrimaryButtonComponent } from "../../../components/buttons/primary-button/primary-button.component";
+import { SecondaryButtonComponent } from "../../../components/buttons/secondary-button/secondary-button.component";
 import { CommonModule } from '@angular/common';
 import { PricingItem } from '../../../models/items/pricing-item';
 

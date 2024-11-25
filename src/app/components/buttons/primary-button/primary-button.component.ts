@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, Input, Renderer2 } from '@angular/core';
-import { WhatsappService } from '../../services/whatsapp.service';
-import { environment } from '../../../environments/environment';
+import { WhatsappService } from '../../../services/whatsapp.service';
+import { environment } from '../../../../environments/environment';
 import { BaseButtonComponent } from '../base-button/base-button.component';
 
 

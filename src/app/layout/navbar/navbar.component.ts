@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SectionManagerService } from '../../services/section-manager.service';
 import { WindowService } from '../../services/window.service';
-import { LoginButtonComponent } from "../../components/login-button/login-button.component";
+import { LoginButtonComponent } from "../../components/buttons/login-button/login-button.component";
 import { AppLogoComponent } from "../../components/app-logo/app-logo.component";
 @Component({
   selector: 'app-navbar',

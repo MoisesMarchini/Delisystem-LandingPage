@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { CommonModule } from '@angular/common';
-import { SocialButtonComponent } from '../../components/social-button/social-button.component';
+import { SocialButtonComponent } from '../../components/buttons/social-button/social-button.component';
 
 @Component({
   selector: 'app-footer',

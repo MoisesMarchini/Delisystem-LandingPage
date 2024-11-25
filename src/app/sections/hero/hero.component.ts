@@ -1,6 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { PrimaryButtonComponent } from "../../components/primary-button/primary-button.component";
+import { PrimaryButtonComponent } from "../../components/buttons/primary-button/primary-button.component";
 import { WarpedSvgComponent } from "../../components/warped-svg/warped-svg.component";
 import { ImageTiltComponent } from "../../components/image-tilt/image-tilt.component";
 

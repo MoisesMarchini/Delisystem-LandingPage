@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PrimaryButtonComponent } from "../primary-button/primary-button.component";
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-login-button',
