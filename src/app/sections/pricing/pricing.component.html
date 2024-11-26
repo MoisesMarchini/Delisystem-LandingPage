@@ -2,11 +2,18 @@
   <div class="py-16 lg:py-32">
     <div class="layout">
       <app-section-header [contentItem]="sectionProps"></app-section-header>
-      <div class="grid lg:grid-cols-3 gap-4 mt-14">
+      <div class="grid lg:grid-cols-3 gap-4 lg:gap-0 mt-14 lg:mx-20">
         <app-pricing-card
-          class="relative hover:z-10"
-          *ngFor="let pricingItem of sectionProps.items"
-          [pricingItem]="pricingItem"
+          class="relative lg:translate-x-2 py-5"
+          [pricingItem]="sectionProps.items[0]"
+        ></app-pricing-card>
+        <app-pricing-card
+          class="relative lg:z-[1]"
+          [pricingItem]="sectionProps.items[1]"
+        ></app-pricing-card>
+        <app-pricing-card
+          class="relative lg:-translate-x-2 py-5"
+          [pricingItem]="sectionProps.items[2]"
         ></app-pricing-card>
       </div>
     </div>

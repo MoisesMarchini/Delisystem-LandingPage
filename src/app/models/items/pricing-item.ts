@@ -10,6 +10,7 @@ export interface PricingItem {
   name: PricingName,
   price: string,
   items: string[],
+  highlight: boolean
 }
 
 export class PricingItem extends BaseModel<PricingItem>{
@@ -18,6 +19,7 @@ export class PricingItem extends BaseModel<PricingItem>{
       name: PricingName.basic,
       price: 'R$ 0,00',
       items: [''],
+      highlight: false,
     } as PricingItem;
   }
 }

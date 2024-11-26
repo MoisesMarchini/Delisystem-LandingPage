@@ -1,31 +1,52 @@
 <div
   animate="false"
-  class="card shadow-highlight shadow-behind neon-xs flex flex-col bg-opacity-5 rounded-md h-full transition-all"
+  [class]="
+    'card shadow-xl bg-gradient-to-bl hover:shadow-2xl relative overflow-hidden flex flex-col rounded-md h-full transition-all ' +
+    (!pricingItem.highlight
+      ? 'bg-orange-50 text-black'
+      : 'to-highlight from-red-500 text-white ')
+  "
 >
-  <div class="card-header p-6 pt-8 bg-highlight text-white rounded-t-md">
-    <h5 class="mb-6 text-5xl mt-auto font-semibold">
-      {{ pricingItem.price }}<span class="text-xs">/ mês</span>
-    </h5>
-    <h4 class="text-sm font-medium m-0">
+  <div
+    *ngIf="pricingItem.highlight"
+    style="rotate: 45deg"
+    class="text-center bg-gradient-to-tr to-blue-600 from-blue-400 popular-sticky absolute -top-2 -right-2 w-[200px] pt-10 pb-3 m-8 origin-top-right translate-x-1/2 -translate-y-1/2 bg-white text-white font-semibold"
+  >
+    Popular
+  </div>
+  <div class="card-header p-6 pb-0 rounded-t-md">
+    <h4 class="text-2xl font-semibold m-0">
       {{ pricingItem.name }}
     </h4>
   </div>
-  <div
-    class="card-body p-6 flex flex-col flex-grow bg-white shadow-xl bg-opacity-85 text-black rounded-b-md"
-  >
+  <div class="card-body p-6 flex flex-col flex-grow rounded-b-md">
     <ul class="mb-16 text-sm flex flex-col gap-4">
       <li
         *ngFor="let item of pricingItem.items"
         class="flex gap-3 items-start font-medium"
       >
         <i
-          class="fa-solid fa-circle-check text-highlight h-4 w-4 text-base mt-1 grid place-content-center"
+          [class]="
+            'fa-solid fa-circle-check h-4 w-4 text-base mt-1 grid place-content-center ' +
+            (pricingItem.highlight ? 'text-white' : 'text-highlight')
+          "
         ></i>
         {{ item }}
       </li>
     </ul>
-    <button secondary class="mt-auto w-full rounded">
-      <span class="text-xs mx-auto"> Começar agora! </span>
+    <h5 class="mb-6 text-4xl mt-auto font-semibold">
+      {{ pricingItem.price }}<span class="text-xs">/mês</span>
+    </h5>
+    <button
+      primary
+      [class]="
+        'w-full rounded ' +
+        (pricingItem.highlight
+          ? 'bg-white text-highlight hover:text-white'
+          : '')
+      "
+    >
+      <span class="text-sm mx-auto py-2"> Começar agora! </span>
     </button>
   </div>
 </div>
