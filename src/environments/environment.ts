@@ -3,6 +3,7 @@ import { PricingItem, PricingName } from "../app/models/items/pricing-item";
 import { ServiceItem } from "../app/models/items/service-item";
 import { AfterHeroSection } from "../app/models/sections/after-hero-section";
 import { HeroSection } from "../app/models/sections/hero-section";
+import { NewsletterSection } from "../app/models/sections/newsletter-section";
 import { PricingSection } from "../app/models/sections/pricing-section";
 import { ServicesSection } from "../app/models/sections/services-section";
 
@@ -135,5 +136,12 @@ export const environment = {
         }),
       ]
     } as PricingSection,
+    newsletter: {
+      endEmail: '',
+      bgImgPath: '/sections/newsletter/newsletter-bg.jpeg',
+      placeholderText: 'Digite seu email',
+      title: "Receba novidades e promoções",
+      description: "Assine nossa newsletter para ficar por dentro de novidades, promoções exclusivas e dicas para melhorar seu negócio."
+    } as NewsletterSection
   }
 };
