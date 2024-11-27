@@ -1,7 +1,10 @@
 <div
   animate="false"
+  [class.brightness-75]="
+    currentHoverItem && currentHoverItem != pricingItem.name
+  "
   [class]="
-    'card shadow-xl bg-gradient-to-bl hover:shadow-2xl relative overflow-hidden flex flex-col rounded-md h-full transition-all ' +
+    'card shadow-5  bg-gradient-to-bl hover:shadow-2xl relative overflow-hidden flex flex-col rounded-md h-full transition-all ' +
     (!pricingItem.highlight
       ? 'bg-orange-50 text-black'
       : 'to-highlight from-red-500 text-white ')
