@@ -18,11 +18,7 @@ export const environment = {
     socials: [
       {
         label: 'instagram',
-        path: 'https://www.instagram.com/runordie_assessoria/',
-      },
-      {
-        label: 'tiktok',
-        path: 'https://www.tiktok.com/@walison_rodrigues7',
+        path: 'https://www.instagram.com/delisystem/',
       },
     ] as {label: string, path: string, icon?: string}[]
   },
