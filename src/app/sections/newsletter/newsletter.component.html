@@ -1,13 +1,7 @@
-<app-base-section class="bg-highlight overflow-hidden shadow-xl">
-  <div class="img-wrapper pointer-events-none absolute inset-0 -z-[1]">
-    <img
-      [src]="sectionProps.bgImgPath"
-      alt=""
-      class="object-cover h-full w-full opacity-[.5] blur-[1px] contrast-[.5] brightness-[.5]"
-    />
-  </div>
-  <div class="py-10 lg:py-20">
-    <div class="content max-w-[500px] text-center mx-auto text-white">
+<app-base-section class="bg-orange-100 overflow-hidden">
+  <app-waves class="absolute bottom-0 inset-x-0 -z-[1]"></app-waves>
+  <div class="py-10">
+    <div class="content max-w-[500px] text-center mx-auto text-f">
       <h3
         class="font-semibold mb-3 text-2xl lg:text-3xl"
         [innerHTML]="sectionProps.title"

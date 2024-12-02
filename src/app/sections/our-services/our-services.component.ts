@@ -3,11 +3,12 @@ import { BaseSectionComponent } from '../../layout/base-section/base-section.com
 import { environment } from '../../../environments/environment';
 import { ServiceItemComponent } from "./service-item/service-item.component";
 import { CommonModule } from '@angular/common';
+import { WavesComponent } from "../../components/waves/waves.component";
 
 @Component({
   selector: 'app-our-services',
   standalone: true,
-  imports: [BaseSectionComponent, CommonModule, ServiceItemComponent],
+  imports: [BaseSectionComponent, CommonModule, ServiceItemComponent, WavesComponent],
   templateUrl: './our-services.component.html',
   styleUrl: './our-services.component.scss'
 })

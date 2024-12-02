@@ -8,6 +8,7 @@ import { PricingSection } from "../app/models/sections/pricing-section";
 import { ServicesSection } from "../app/models/sections/services-section";
 
 export const environment = {
+  baseAppUrl: 'https://app.delisystem.com.br/',
   appColors: {
     highlight: '#FF3131'
   },
@@ -31,10 +32,6 @@ export const environment = {
       id: 'home',
       label: 'início',
     },
-    // {
-    //   id: 'about',
-    //   label: 'sobre',
-    // },
     {
       id: 'services',
       label: 'serviços',
@@ -43,10 +40,6 @@ export const environment = {
       id: 'pricing',
       label: 'planos',
     },
-    {
-      id: 'testimonials',
-      label: 'testemunhos',
-    }
   ],
 
   sectionProps: {

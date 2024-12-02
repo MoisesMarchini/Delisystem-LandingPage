@@ -9,11 +9,12 @@ import { AfterHeroComponent } from "./sections/after-hero/after-hero.component";
 import { OurServicesComponent } from "./sections/our-services/our-services.component";
 import { PricingComponent } from "./sections/pricing/pricing.component";
 import { NewsletterComponent } from './sections/newsletter/newsletter.component';
+import { ClientsComponent } from "./sections/clients/clients.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, HeroComponent, AfterHeroComponent, OurServicesComponent, PricingComponent, NewsletterComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent, HeroComponent, AfterHeroComponent, OurServicesComponent, PricingComponent, NewsletterComponent, ClientsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

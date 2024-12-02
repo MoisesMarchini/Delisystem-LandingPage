@@ -1,8 +1,23 @@
-<app-base-section class="py-20">
-  <div class="flex flex-col gap-10">
+<app-base-section class="overflow-hidden">
+  <div class="flex flex-col gap-10 py-20">
     <app-service-item
-      *ngFor="let item of sectionProps.items"
+      *ngFor="let item of sectionProps.items; let i = index; let last = last"
       [model]="item"
-    ></app-service-item>
+    >
+      <app-waves
+        *ngIf="i == 1"
+        type="line"
+        color="#ffedd5"
+        [index]="1"
+        [style]="{ top: 'calc(80vh * ' + i + ')' }"
+        class="absolute left-0 h-[80vh] w-screen -z-[1] -scale-y-100 hidden lg:inline"
+      ></app-waves>
+      <app-waves
+        *ngIf="last"
+        type="stacked"
+        [index]="1"
+        class="absolute -z-[1] bottom-0 inset-x-0"
+      ></app-waves>
+    </app-service-item>
   </div>
 </app-base-section>
