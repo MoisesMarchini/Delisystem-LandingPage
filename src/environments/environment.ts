@@ -109,7 +109,7 @@ export const environment = {
             "Robô para whatsapp",
             "Sistema de comandas para mesas/garçons",
           ],
-          price: "R$ 55,00",
+          price: "R$ 65,00",
           highlight: true
         }),
         new PricingItem({
