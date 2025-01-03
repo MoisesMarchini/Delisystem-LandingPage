@@ -10,7 +10,7 @@ import { DateProps } from '../helpers/dateprops';
   providedIn: 'root'
 })
 export class DelisystemApiService {
-  readonly apiUrl = 'https://delisystem.azurewebsites.net/api';
+  readonly apiUrl = 'https://core.delisystem.com.br/api';
   constructor(private httpClient: HttpClient) { }
 
   getCompanies(): Observable<SimpleCompany[]> {
