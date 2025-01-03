@@ -117,9 +117,7 @@ export const environment = {
           items: [
             "Funções do plano normal",
             "Sem limite de funcionários",
-            "Treinos focados em performance para o TAF",
-            "Preparação para exigências físicas específicas do teste",
-            "Aborda técnicas de resistência e velocidade",
+            "Controle de estoque"
           ],
           price: "R$ 85,00"
         }),
