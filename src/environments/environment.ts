@@ -98,6 +98,7 @@ export const environment = {
             "Somente um usuário",
             "Cardápio Digital",
             "Gerenciamento de pedidos em tempo real",
+            "Até 40 pedidos mensais",
           ],
           price: "R$ 0,00"
         }),
@@ -106,8 +107,7 @@ export const environment = {
           items: [
             "Funções do plano básico",
             "Cadastro de até 5 funcionários",
-            "Robô para whatsapp",
-            "Sistema de comandas para mesas/garçons",
+            "Até 1000 pedidos mensais",
           ],
           price: "R$ 65,00",
           highlight: true
@@ -117,6 +117,9 @@ export const environment = {
           items: [
             "Funções do plano normal",
             "Sem limite de funcionários",
+            "Robô para whatsapp",
+            "Sistema de comandas para mesas/garçons",
+            "Pedidos ilimitados",
             "Controle de estoque"
           ],
           price: "R$ 85,00"
