@@ -96,6 +96,7 @@ export const environment = {
           name: PricingName.basic,
           items: [
             "Somente um usuário",
+            "Cadastro de entregadores",
             "Cardápio Digital",
             "Gerenciamento de pedidos em tempo real",
             "Até 40 pedidos mensais",
@@ -107,6 +108,9 @@ export const environment = {
           items: [
             "Funções do plano básico",
             "Cadastro de até 5 funcionários",
+            "Pixel de rastreamento de marketing",
+            "Relatório Completo",
+            "Cupons de desconto",
             "Até 1000 pedidos mensais",
           ],
           price: "R$ 65,00",
@@ -117,9 +121,9 @@ export const environment = {
           items: [
             "Funções do plano normal",
             "Sem limite de funcionários",
-            "Robô para whatsapp",
+            "Sem limite de pedidos",
+            "Chatbot de whatsapp",
             "Sistema de comandas para mesas/garçons",
-            "Pedidos ilimitados",
             "Controle de estoque"
           ],
           price: "R$ 85,00"

@@ -6,7 +6,7 @@ import { BaseButtonComponent } from '../base-button/base-button.component';
 
 export type ButtonActions = 'app' | { wppMessage: string } | { method: () => void }
 @Component({
-  selector: 'button[primary]',
+  selector: '[primary]',
   standalone: true,
   imports: [],
   template: '<ng-content></ng-content>',
