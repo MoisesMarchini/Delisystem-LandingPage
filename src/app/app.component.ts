@@ -10,18 +10,21 @@ import { OurServicesComponent } from "./sections/our-services/our-services.compo
 import { PricingComponent } from "./sections/pricing/pricing.component";
 import { NewsletterComponent } from './sections/newsletter/newsletter.component';
 import { ClientsComponent } from "./sections/clients/clients.component";
+import { FacebookPixel } from './facebook-pixel';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent, HeroComponent, AfterHeroComponent, OurServicesComponent, PricingComponent, NewsletterComponent, ClientsComponent],
+  imports: [NavbarComponent, FooterComponent, HeroComponent, AfterHeroComponent, OurServicesComponent, PricingComponent, NewsletterComponent, ClientsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Delisystem-LandingPage';
 
-  constructor(private windowService: WindowService, private sectionManagerService: SectionManagerService) { }
+  constructor(private windowService: WindowService, private sectionManagerService: SectionManagerService) {
+    new FacebookPixel('1369463623419713');
+  }
 
   ngAfterViewInit() {
     this.sectionManagerService.init();
